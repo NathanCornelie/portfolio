@@ -1,7 +1,15 @@
+<script setup lang="ts">
+import Presentation from './components/Presentation.vue';
+
+</script>
+
 <template>
   <NuxtLayout>
     <v-app>
-      <NuxtPage />
+      <Presentation />
+      <Experiences />
+      <Projets />
+      
     </v-app>
   </NuxtLayout>
 </template>
