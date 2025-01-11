@@ -1,9 +1,10 @@
 <template>
-   <div class="pa-md-5 main">
+  <div class="main">
     <v-card
-      class="d-lg-flex d-block"
+      class="d-lg-flex d-block bg-transparent w-100"
       min-height="500px"
-      variant="flat"
+      
+      elevation="0"
       style="width: 80%"
     >
       <div
@@ -12,22 +13,20 @@
         <div
           class="w-50 mt-5 mt-md-0 d-flex flex-column align-center justify-center"
         >
-          <v-card
-            class="photo"
-            max-width="340px"
-            max-height="340px"
+          <div
+            class="photo bg-transparent"
+            max-width="360px"
+            max-height="360px"
             variant="flat"
           >
             <v-img
-              class="bg-white mb-16"
-              src="/profile.jpeg"
+              class=" mb-4"
+              src="/profile.png"
               width="380px"
             ></v-img>
-          </v-card>
-          <p class="font-weight-bold mt-4" style="color: #1e375a">
-            {{ informations.name }}
-          </p>
-          <p>{{ informations.job }}</p>
+  </div>
+        
+          <p style="font-size: 24px;">{{ informations.job }}</p>
           <div class="d-flex my-5">
             <a :href="links.linkedin"
               ><v-img src="/linkedin_logo.png" width="40px" class="mx-2"
@@ -38,15 +37,18 @@
           </div>
         </div>
         <div class="d-flex flex-column align-center justify-center">
+          <div>
+            <span class="name">CORNELIE Nathan</span>
+          </div>
           <v-card
             class="py-lg-10 pl-lg-10 bg-transparent text-start d-flex flex-column align-center justify-center"
             :elevation="0"
             ><div class="mb-4">
               <h3>About Me</h3>
-              <p style="font-size: 18px" class="">
+              <p class="">
                 {{ informations.about }}
               </p>
-              <v-btn base-color=" bg-blue-lighten-2 mt-4">
+              <v-btn base-color="  mt-4" style="background-color: #0094FE">
                 <mdi-icon
                   icon="mdiTrayArrowDown"
                   color="white"
@@ -90,16 +92,12 @@
                     </div>
                   </div>
                 </div>
-
-               
               </v-card>
             </div>
           </v-card>
         </div>
       </div>
     </v-card>
-
-    
   </div>
 </template>
 
@@ -110,75 +108,61 @@ import Experiences from "./Experiences.vue";
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .main {
+  font-family: "Kanit", serif;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   .infos-container {
-    color: rgba(30, 55, 90, 0.7);
+    .name {
+      
+      font-family: "Bebas Neue", serif;
+      font-weight: 600;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 90px;
+      background-image: linear-gradient(146deg, #003459 0%, rgba(30,29,226,1) 20%, rgba(5,155,255,1) 67%, rgb(113, 178, 235) 100%);
+      
+    }
+
+   
+    color: white !important;
+    h4{
+      /* color: #fa9344; */
+    }
 
     @media (max-width: 960px) {
       border: none;
     }
-    border: 2px solid #1e375a24;
     h3 {
-      font-size: 20px;
+      font-size: 24px;
       margin-bottom: 10px;
-      color: #1e375a;
+      color: var(--big-title);
       font-weight: bolder;
     }
   }
-
-  
-
- 
-} 
-.research_card {
-    font-family: "Kanit", sans-serif;
-    width: 80%;
-    .research_left {
-      padding: 20px 0;
-
-      h2 {
-        font-weight: 500;
-        font-size: 32px;
-        margin-bottom: 20px;
-      }
-      p {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-        margin-bottom: 30px;
-      }
-      
-    }
-   
-  }
-.research_right {
-      border-radius: 10px;
-      overflow: hidden;
-      max-width: 500px;
-    }
-.pub {
-    &:hover {
-      cursor: pointer;
-    }
-    .pub-title:hover {
-      color: #2e7d32;
-    }
-
-    .pub-description {
-      font-size: 14px;
-    }
-  }
-  button {
-    font-family: "Kanit", sans-serif;
-    span {
-      color: white;
-      font-weight: 700;
-    }
-  
 }
+.pub {
+  &:hover {
+    cursor: pointer;
+  }
+  .pub-title:hover {
+    color: #2e7d32;
+  }
 
+  .pub-description {
+    font-size: 14px;
+  }
+}
+button {
+  font-family: "Kanit", sans-serif;
+  span {
+    color: white;
+    font-weight: 700;
+  }
+}
 </style>

@@ -3,25 +3,18 @@ const informations = {
     name: "Nathan CORNELIE",
     job: "DevOps Engineer",
     about:
-      "Hi, I'm Nathan, a DevOps Engineer based in Luxembourg."+
+      "Hi, I'm Nathan, a DevOps Engineer based in Luxembourg. " +
        "Passionate about building efficient and scalable web applications with Vue,"
-       +" I'm eager to contribute my expertise to impactful projects..",
+       +" I'm eager to contribute my expertise to impactful projects. ",
   
     interest: [
       "DevOps",
       "Software Engineering",
-      "Cyber Security",
+      "Web Development",
     ],
     educations: [
       { title: "Master's degree in Computer Engineering ", school: "Specialization in Cybersecurity | Telecom NANCY, France" },
-      // {
-      //   title: "MSc Statistical Sciences",
-      //   school: "University of Naples Federico II",
-      // },
-      // {
-      //   title: "BSc Artificial Intelligence",
-      //   school: "Massachusetts Institute of Technology",
-      // },
+     
     ],
     publications: [
       {
@@ -52,7 +45,7 @@ const informations = {
     title: "Ingenieur DevOps",
     company: "Banque de Luxembourg",
     dates: "Octobre 2024",
-    logo:"bol.jpeg",
+    logo:{link:"bol.png",size: 200},
     jobs: [
         {
             image: "python.png",
@@ -77,7 +70,7 @@ const informations = {
                 },
             ]
         }, {
-            image: "angular.jpeg",
+            image: "angular.png",
             tasks: [
                 {
                     title: "Developpement Application",
@@ -91,7 +84,7 @@ const informations = {
     title: "Stage Ingenieur Cloud DevOps",
     company: "Excellium",
     dates: "Mars 2024 - Aout 2024",
-    logo:"excellium.png",
+    logo:{link:"excellium.png",size: 180},
     jobs: [
         {
             image: "ansible.png",
@@ -132,7 +125,7 @@ const informations = {
     title: "Stage Developpeur Web",
     company: "BIAC Log SA",
     dates: "Juin 2023 - Aout 2023",
-    logo:"biac.png",
+    logo:{link:"biac.png",size: 180},
     jobs: [
         {
             image: "vue.png",
