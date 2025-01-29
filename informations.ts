@@ -42,30 +42,30 @@ const informations = {
   
   // EXPERIENCES PAGE
   const experiences = [{
-    title: "Ingenieur DevOps",
+    title: "DevOps Engineer",
     company: "Banque de Luxembourg",
-    dates: "Octobre 2024",
-    logo:{link:"bol.png",size: 200},
+    dates: "October 2024",
+    logo: { link: "bol.png", size: 200 },
     jobs: [
         {
             image: "python.png",
             tasks: [
                 {
-                    title: "Script d'automatisation de tests",
-                    subtitle: ["Automatisation de process manuels", "Envoi de mails de rapport"]
+                    title: "Test Automation Script",
+                    subtitle: ["Automation of manual processes", "Sending report emails"]
                 }
             ]
         }, {
             image: "automic.png",
             tasks: [
                 {
-                    title: "Amélioration de script",
+                    title: "Script Improvement",
                     subtitle: []
                 }, {
-                    title: "Maintenance des process",
+                    title: "Process Maintenance",
                     subtitle: []
                 }, {
-                    title: "Developpement de script d'automatisation",
+                    title: "Development of Automation Scripts",
                     subtitle: []
                 },
             ]
@@ -73,80 +73,81 @@ const informations = {
             image: "angular.png",
             tasks: [
                 {
-                    title: "Developpement Application",
-                    subtitle: ["Developpemet d'une application pour améliorer le monitoring sur l'environement"]
+                    title: "Application Development",
+                    subtitle: ["Development of an application to improve monitoring on the environment"]
                 }
             ]
         },
     ]
 },
 {
-    title: "Stage Ingenieur Cloud DevOps",
+    title: "Cloud DevOps Engineer Intern",
     company: "Excellium",
-    dates: "Mars 2024 - Aout 2024",
-    logo:{link:"excellium.png",size: 180},
+    dates: "March 2024 - August 2024",
+    logo: { link: "excellium.png", size: 180 },
     jobs: [
         {
             image: "ansible.png",
             tasks: [
                 {
-                    title: "Developpement de scripts d'automatisation avec ansible",
-                    subtitle: ["configuration de firewall", "Installation et configuration VPN "]
+                    title: "Development of Automation Scripts with Ansible",
+                    subtitle: ["Firewall configuration", "Installation and configuration of VPN"]
                 }
             ]
         }, {
             image: "react.png",
             tasks: [
                 {
-                    title: "Developpement d'Applicqtion web",
-                    subtitle: ["Appllication de gestion de la nomenclature pour un client"]
+                    title: "Web Application Development",
+                    subtitle: ["Management application for nomenclature for a client"]
                 }
             ]
         }, {
             image: "docker.png",
             tasks: [
                 {
-                    title: "Pipline azure Devops de sécurisation d'images Docker",
-                    subtitle: ["Scan, Signature et mise dans le cloud d'image Docker"]
+                    title: "Azure DevOps Pipeline for Docker Image Security",
+                    subtitle: ["Scan, signing, and cloud storage of Docker images"]
                 }
             ]
         }, {
             image: "python.png",
             tasks: [
                 {
-                    title: "Developpement de scripts de verification des règles firewall",
-                    subtitle: ["Développement d'un script ayant pour objectif d'améliorer et de faire un nettoyage des règles de firewall "]
+                    title: "Development of Scripts for Firewall Rule Verification",
+                    subtitle: ["Development of a script aimed at improving and cleaning up firewall rules"]
                 }
             ]
         },
     ]
 },
 {
-    title: "Stage Developpeur Web",
+    title: "Web Developer Intern",
     company: "BIAC Log SA",
-    dates: "Juin 2023 - Aout 2023",
-    logo:{link:"biac.png",size: 180},
+    dates: "June 2023 - August 2023",
+    logo: { link: "biac.png", size: 180 },
     jobs: [
         {
             image: "vue.png",
             tasks: [
                 {
-                    title: "Developpement d'application web",
-                    subtitle: ["Réalisation de pages pour répondres aux nouvelles demandes du clients"]
+                    title: "Web Application Development",
+                    subtitle: ["Creating pages to meet new client requests"]
                 }
             ]
         }, {
             image: "dot_net.png",
             tasks: [
                 {
-                    title: "Developpement API",
-                    subtitle: ["Optimisation d'algorithme", "Developpement de routes api"]
+                    title: "API Development",
+                    subtitle: ["Algorithm optimization", "Development of API routes"]
                 }
             ]
         },
     ]
 }
-]
+];
+
   const educations = [
     {
       titre: "Stage Développeur",
@@ -240,8 +241,8 @@ const informations = {
     image: ""
   }
   const links = {
-    linkedin: "https://www.linkedin.com/in/dilettachiaro/",
-    github: "https://github.com/dilettachiaro",
+    linkedin: "https://www.linkedin.com/in/nathan-cornelie/",
+    github: "https://github.com/NathanCornelie",
     scholar: "https://scholar.google.com/citations?user=n1VGy-gAAAAJ&hl=it",
     medium: "https://medium.com/@diletta.chiaro",
   };

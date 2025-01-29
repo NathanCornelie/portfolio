@@ -25,6 +25,7 @@ import Presentation from './components/Presentation.vue';
 .app{
   background-color: var(--bg-color)  !important;
   font-family: "Kanit",serif;
+  width: 100%;
 }
 h2 {
   font-weight: 0;

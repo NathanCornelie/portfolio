@@ -5,18 +5,19 @@
       class="bg-transparent d-flex flex-column align-center"
     >
       <h2>Skills</h2>
-      <div>
-        <div class="d-flex align-center justify-center g-3 ">
-          <v-img  :src="`nuxt.png`" width="125" />
-          <v-img  :src="`vue.png`" width="90" />
-          <v-img  :src="`vuetify.png`" width="125" />
-          <v-img  :src="`ts.png`" width="90" />
+     
+      <div class="w-sm-50" style="max-width:450px">
+        <div class="d-flex align-center  justify-space-around " style="">
+          <v-img  :src="`nuxt.png`" style="max-width: 25%;" />
+          <v-img  :src="`vue.png`" style="max-width: 18%;"/>
+          <v-img  :src="`vuetify.png`" style="max-width: 25%;" />
+          <v-img  :src="`ts.png`" style="max-width: 18%;" />
         </div>
-        <div class="d-flex align-center justify-center g-4 " style="gap: 20px;">
-          <v-img  :src="`python.png`" width="125" />
-          <v-img  :src="`docker.png`" width="90" />
-          <v-img  :src="`mongo.png`" width="125" />
-          <v-img  :src="`node.svg`" width="90" />
+        <div class="d-flex align-center justify-space-around " style="">
+         <img :src="`python.png`" style="width: 22%;">
+         <img :src="`mongo.png`" style="width: 25%;">
+         <img :src="`docker.png`" style="width: 22%;">
+         <img :src="`node.svg`" style="width: 22%;">
         </div>
       </div>
     </v-card>

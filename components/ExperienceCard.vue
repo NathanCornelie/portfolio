@@ -1,9 +1,9 @@
 <template>
   <div class="main w-100">
-    <v-card variant="flat" class="bg my-4 w-100 container py-3">
+    <v-card variant="flat" class="bg my-4  py-3 w-100">
       <!-- desc -->
-      <v-card variant="flat" class="bg-transparent d-flex ">
-        <div class="mx-4 d-flex align-center">
+      <v-card variant="flat" class="bg-transparent d-flex w-100">
+        <div class="mx-lg-4 d-flex align-center ">
           <v-img :src="experience.logo.link" :width="experience.logo.size"></v-img>
         </div>
 
@@ -21,7 +21,7 @@
         class="bg-transparent d-flex align-center px-5"
       >
         <div class="d-flex align-center">
-          <v-img class="bg-white py-3 mx-3" :src="job.image" width="70px" height="70px" />
+          <v-img class="bg-white py-3 mx-lg-3" :src="job.image" width="70px" height="70px" />
         </div>
         <div>
           <div v-for="task in job.tasks">
@@ -47,6 +47,7 @@ const experience = experiences[Props.index];
 .main { 
   font-family: "Kanit", serif;
   font-size: 20px;
+  
   .title {
     h1,h2,h3{
       line-height: 35px;

@@ -1,25 +1,14 @@
 <template>
-  <div class="my-4 d-flex flex-column align-center" style="font-family:'Kanit',serif;">
+  <div class="my-4 d-flex flex-column align-center w-100" style="font-family:'Kanit',serif;">
     <h2 >Work Experiences</h2>
-    <div class="px-8 pt-4 d-flex justify-center">
+    <div class="px-lg-8 pt-4 d-lg-flex d-block justify-center w-100" style="max-width: 100%;">
       <div
-        
         class="d-flex flex-column  justify-center "
       >
-        <div v-for="(exp, i) in experiences" class="d-flex ">
+        <div v-for="(exp, i) in experiences" class="d-flex w-100 ">
           <ExperienceCard class="container" :index="i" />
         </div>
       </div>
-      <!-- <div style="width: 40%" class="d-flex flex-column align-start ml-5">
-        <div v-for="(exp, i) in experiences">
-          <ExperienceCard
-            style="margin-top: 300px"
-            v-if="i % 2 == 1"
-            class="container"
-            :index="i"
-          />
-        </div> -->
-      <!-- </div> -->
     </div>
   </div>
 </template>
