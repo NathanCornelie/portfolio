@@ -2,7 +2,7 @@ ARG NODE_VERSION=22.8.0
 
 FROM node:${NODE_VERSION}-slim as base
 
-ARG PORT=3003
+ARG PORT=3002
 
 WORKDIR /app
 
