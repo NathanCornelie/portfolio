@@ -9,10 +9,6 @@ jobs:
   deploy:
     runs-on: self-hosted
     steps:
-      - name: Cleanup existing repository
-        run: |
-          cd /home/nathan/apps  # Remplacez par la racine où vous stockez les projets
-          rm -rf portfolio
 
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -26,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd /home/nathan/apps/portfolio
+       
           npm install
 
       - name: Build the application
