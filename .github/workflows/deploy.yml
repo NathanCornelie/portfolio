@@ -22,8 +22,4 @@ jobs:
           docker rm portfolio || true
           docker run -d --name portfolio -p 3002:3002 portfolio
 
-      - name: Manage with PM2
-        run: |
-          pm2 stop portfolio || true
-          pm2 delete portfolio || true
-          pm2 start "docker start portfolio" --name portfolio --restart-delay=5000
+      
